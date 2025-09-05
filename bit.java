@@ -1,5 +1,5 @@
-public class bit{
-	public static void main(String [] args){
+        public class bit{
+		public static void main(String [] args){
 		//1£¬  2µÄ²¹Âë00000000  00000000 00000000 00000010
 		//2£¬  3µÄ²¹Âë00000000  00000000 00000000 00000011
 		//3£¬         00000000  00000000 00000000 00000010    2

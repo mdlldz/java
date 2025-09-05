@@ -1,6 +1,6 @@
-import java.util.Scanner;
-public class input{
-	public static void main(String [] args){
+		import java.util.Scanner;
+		public class input{
+		public static void main(String [] args){
 		Scanner myScanner = new Scanner (System.in);
 		System.out.println("ÇëÊäÈëÃû×Ö");
 		String name = myScanner.next();
