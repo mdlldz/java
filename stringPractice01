@@ -1,0 +1,31 @@
+/**
+输入若干行字符串，判断每行字符串是否可以作为JAVA语法的合法标识符。 
+判断合法标识符的规则：由字母（含汉字）、数字、下划线“_”、美元符号“$”组成，并且首字母不能是数字。
+输入格式:
+ 输入有多行。
+ 每行一个字符串，字符串长度不超过10个字符。
+输出格式:
+若该行字符串可以作为JAVA标识符，则输出“true”;否则，输出“false”。
+
+输入样例:
+abc
+_test
+$test
+a 1
+a+b+c
+a’b
+123
+变量
+输出样例:
+true
+true
+true
+false
+false
+false
+false
+true
+
+提醒：Character.isJavaIdentifierStart 能判断java第一个字符是否符合第一个字符规则 返回布尔值
+Character.isJavaIdentifierPart 能判断字符是否符合字符规则，返回布尔值
+*/
