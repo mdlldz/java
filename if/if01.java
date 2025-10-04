@@ -1,13 +1,13 @@
-	import  java.util.Scanner;
+    import java.util.Scanner;
 	public class if01{
 	public static void main(String [] args){
 	Scanner myScanner = new  Scanner(System.in);
-	System.out.println("ÇëÊäÈëÄêÁä");
+	System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 	int age = myScanner.nextInt();
 	if(age > 18){
-	System.out.println("ÐèÒª¶Ô×Ô¼ºÐÐÎª¸ºÔð");}
+	System.out.println("ï¿½ï¿½Òªï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½");}
 	else{
-	System.out.println("ÎÞÐè¸ºÔð");
+	System.out.println("ï¿½ï¿½ï¿½è¸ºï¿½ï¿½");
 	}	
 	}
 }
