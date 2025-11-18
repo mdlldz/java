@@ -1,25 +1,21 @@
 public class exercise3 {
     public static void main(String[] args) {
-        System.out.println(Frock.getNextNum());
-        System.out.println(Frock.getNextNum());
-        Frock frock1 = new Frock();
-        System.out.println(frock1.getSerialNumber());
-        Frock frock2 = new Frock();
-        System.out.println(frock2.getSerialNumber());
+            String name = "mdl ldz lzt";
+            C.c(name);
     }
 }
-class Frock{
-    private int serialNumber;
-    private static int currentNum = 100000;
-    public static int getNextNum(){
-        currentNum += 100;
-        return currentNum;
-    }
-    public int getSerialNumber() {
-        return serialNumber;
-    }
-    public Frock(){
-        serialNumber = Frock.getNextNum();
+class C{
+    public static void  c(String str ){
+        if(str == null){
+            System.out.println("str不能为空");
+            return;
+        }
+        String[] names = str.split(" ");
+        if(names.length != 3){
+            System.out.println("输入的格式不对");
+            return;
+        }
+        String format = String.format("%s,%s .%c",names[2] , names[0],names[1].toUpperCase().charAt(0));
+        System.out.println(format);
     }
 }
-
