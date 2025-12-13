@@ -36,8 +36,8 @@ class  Employee{
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Employee employee = (Employee) o;
-        return age == employee.age && (name != null ? name.equals(employee.name) : employee.name == null);
+        Employee0 employee0 = (Employee0) o;
+        return age == employee0.age && (name != null ? name.equals(employee0.name) : employee0.name == null);
     }
 
     @Override
@@ -47,14 +47,14 @@ class  Employee{
 }
 public class hashset0{
     public static void main(String[] args) {
-         HashSet<Employee> employees = new HashSet<>();
+         HashSet<Employee0> employee0s = new HashSet<>();
 
-        employees.add(new Employee("张三", 25));
-        employees.add(new Employee("李四", 30));
-        employees.add(new Employee("张三", 25));
+        employee0s.add(new Employee0("张三", 25));
+        employee0s.add(new Employee0("李四", 30));
+        employee0s.add(new Employee0("张三", 25));
 
         System.out.println("HashSet中的员工：");
-        for (Employee emp : employees) {
+        for (Employee0 emp : employee0s) {
             System.out.println(emp);
         }
     }
