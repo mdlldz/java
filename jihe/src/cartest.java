@@ -42,8 +42,8 @@ public class cartest {
     }
 }
 class Car {
-    private String name;
-    private double price;
+    public String name;
+    public double price;
 
     public Car(String name, double price) {
         this.name = name;
