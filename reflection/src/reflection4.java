@@ -1,6 +1,6 @@
 import java.io.Serializable;
 
-public class reflection3 {
+public class reflection4 {
     public static void main(String[] args) {
         Class<String> cl1 = String.class;
         Class<Serializable> cl2 = Serializable.class;
