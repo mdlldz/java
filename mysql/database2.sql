@@ -1,0 +1,1 @@
+mysqldump -u root -p -B dp01 dp02 > d :\\bak.sql
