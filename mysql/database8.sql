@@ -1,0 +1,6 @@
+CREATE TABLE t13(
+	birthday DATE ,  -- 记录年月日
+	jobtime DATETIME  , -- 记录年月日时分秒
+	logintime TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP); -- 登录时间 
+SELECT * FROM t13;
+INSERT INTO t13(birthday, jobtime)VALUES ('2022-11-11','2022-11-11 10:10:10');

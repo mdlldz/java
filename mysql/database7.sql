@@ -1,0 +1,9 @@
+CREATE TABLE t8 (
+	`name` CHAR(255));
+CREATE TABLE t9(
+	`name` VARCHAR(21844));
+CREATE TABLE t10(
+	`name` VARCHAR(32766)) CHARSET gbk;
+CREATE TABLE t11(content TEXT,content2 MEDIUMTEXT,content3 LONGTEXT);
+INSERT INTO t11 VALUES ('mdlldz','mdlldz100','mdlldz1000~~')
+SELECT * FROM t11
