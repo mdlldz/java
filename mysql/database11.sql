@@ -1,0 +1,15 @@
+SELECT CHARSET(ename) FROM emp;
+SELECT CONCAT(ename,' job is',job) FROM emp;
+SELECT INSTR ('mdl' , 'ping') FROM DUAL;
+SELECT UCASE(ename) FROM emp;
+SELECT  LCASE(ename,2) FROM emp;
+SELECT  LEFT(ename,2) FROM emp;
+SELECT LENGTH(ename) FROM emp;
+SELECT ename,REPLACE(job , 'MANAGER' ，'经理') FROM emp;
+SELECT STRCMP('mdl','Mdl') FROM DUAL;
+SELECT SUBSTRING(ename,1,2) FROM emp;
+SELECT LTRIM('mdl') FROM DUAL;
+SELECT RTRIM('mdl') FROM DUAL;
+SELECT TRIM('mdl') FROM DUAL;
+
+

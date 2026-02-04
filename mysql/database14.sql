@@ -1,0 +1,17 @@
+SELECT USER() FROM DUAL;
+SELECT DATABASE();
+SELECT MD5('mdl') FROM DUAL;
+SELECT LENGTH(MD5('mdl')) FROM DUAL;
+CREATE TABLE users (
+    id INT,
+    NAME VARCHAR(32) NOT NULL DEFAULT '',
+    pwd CHAR(32) NOT NULL DEFAULT ''
+);
+INSERT INTO users
+	VALUES(100,'mdl',MD5('mdl'));
+SELECT * FROM users;
+SELECT *
+ FROM users
+ WHERE `name` = 'mdl' AND pwd = 'mdl';
+SELECT PASSWORD('mdl') FROM DUAL;
+SELECT * FROM mysql.user;
