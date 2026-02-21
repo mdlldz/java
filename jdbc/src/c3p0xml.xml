@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <!-- 默认配置（无指定名称时使用） -->
+    <default-config>
+        <!-- 1. 数据库连接基本信息 -->
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/dp01</property>
+        <property name="user">root</property>
+        <property name="password">123456</property>
+
+        <!-- 2. 连接池核心配置 -->
+        <property name="initialPoolSize">5</property>        <!-- 初始连接数 -->
+        <property name="maxPoolSize">20</property>          <!-- 最大连接数 -->
+        <property name="minPoolSize">5</property>           <!-- 最小连接数 -->
+        <property name="maxIdleTime">300</property>         <!-- 连接最大空闲时间（秒），超时自动释放 -->
+        <property name="acquireIncrement">2</property>      <!-- 连接数不足时，一次性新增的连接数 -->
+
+        <!-- 3. 连接检测配置（防止连接失效） -->
+        <property name="checkoutTimeout">3000</property>    <!-- 获取连接超时时间（毫秒） -->
+        <property name="idleConnectionTestPeriod">60</property> <!-- 每隔60秒检测空闲连接是否有效 -->
+        <property name="testConnectionOnCheckout">false</property> <!-- 借出连接时是否检测（建议关闭，影响性能） -->
+        <property name="testConnectionOnCheckin">true</property>   <!-- 归还连接时检测（建议开启） -->
+        <property name="preferredTestQuery">SELECT 1</property>    <!-- 检测连接的SQL语句（通用） -->
+    </default-config>
+
+    <!-- 自定义命名配置（可配置多个，按需切换） -->
+    <named-config name="mysql_config">
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://192.168.1.100:3306/your_db?useSSL=false&amp;serverTimezone=UTC</property>
+        <property name="user">root</property>
+        <property name="password">123456</property>
+        <property name="initialPoolSize">10</property>
+        <property name="maxPoolSize">30</property>
+    </named-config>
+</c3p0-config>
