@@ -45,6 +45,13 @@
             <version>8.0.33</version>
             <scope>runtime</scope>
         </dependency>
+
+        <!-- 新增：Apache Commons DbUtils 依赖（解决符号无法解析） -->
+        <dependency>
+            <groupId>commons-dbutils</groupId>
+            <artifactId>commons-dbutils</artifactId>
+            <version>1.7</version>
+        </dependency>
     </dependencies>
 
     <properties>
